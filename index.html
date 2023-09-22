@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotasks</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/resete.css">
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+      <!-- icons-->
+      <script src="https://kit.fontawesome.com/868921030e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#">|Gotasks</a></h1>
+
+        <main class="container">
+            <header class="main-header">
+                <button class="btn-new-task"> Nova tarefa</button>
+                <span>
+                    <span id="count-tasks">0</span>tarefas registradas
+                </span>
+
+            </header>
+            <table>
+                <thead>
+                    <th> Descrição</th>
+                    <th>Data </th>
+                    <th> Ações</th>
+                </thead>
+             <tbody>
+                <th> Estudar HTML</th>
+                <th>20/09/2023 </th>
+                <th> 
+                    <a href="#">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                </th>
+
+
+             </tbody>
+            </table>
+      
+        <DIV class="model-background" id="modal">   
+            <article class="modal-container">
+                <h2 class="title">criar nova tarefa</h2>
+
+                    <form ID="form">
+                        <div class="form-group">
+                            <label flor=""></label>
+                            <input
+                            type="text"
+                            placeholder="Descrição"
+                            id="description"
+                            
+                            >
+                        </div>
+                    <form ID="form"> 
+                        <div class="form-group">
+                            <label flor=""></label>
+                            <input
+                            type="date"
+                            >  
+                        </div>
+                        <div class="button-modal">
+                            <button class="btn-cancel" type="button" onclick=""> Cancelar  </button>
+                            <button class="btn-save" type="button"> Salvar  </button>
+                        </div>
+                    </form>
+            </article>
+        </DIV>  
+        </main>
+    <footer> 
+        <p>&copy; Gotasks, 2023  </p>
+    </footer>
+</body>
+</html>
